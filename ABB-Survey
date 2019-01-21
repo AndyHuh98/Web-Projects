@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        #text-fields {
+            font-size: 20px;
+        }
+        #survey-form {
+            
+        }
+        #name {
+            border: 10px;
+            border-radius: 10px;
+            width: 50%;
+            padding: 9px 15px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        #email {
+             border: 10px;
+            border-radius: 10px;
+            width: 50%;
+            padding: 9px 15px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        #number {
+             border: 10px;
+            border-radius: 10px;
+            width: 50%;
+            padding: 9px 15px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        main {
+            background-color: gainsboro;
+            border: 5px;
+            border-radius: 5px;
+        }
+        #title {
+            text-align: center;
+        }
+        #description {
+            text-align: center;
+        }
+        #survey-form {
+            
+        }
+    </style>
+    
+    <main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Let us know if you enjoyed the food today at Andrew's Burger Bar.</p>
+        <hr>
+        
+        <form id="survey-form">
+            <div id="text-fields">
+                <label id="name-label"><strong>Name: </strong><br><input type="text" placeholder="First Last" id="name" required></label>
+                <br> 
+                <br>
+                <label id="email-label"><strong>Email: </strong><br><input type="email" placeholder="you@xxxxx.com" id="email" required></label>
+                <br>
+                <br>
+                <label id="number-label"><strong>Number: </strong><br><input type="number" placeholder="xxxxxxxxxx" id="number" required min="0000000000" max="9999999999"></label>
+                <br>
+                <br>
+            </div>
+            
+            <label id="servicerate-label">Rate your service: <select id="dropdown" required>
+                <option value="5">Outstanding Service and Meal Quality (5)</option>
+                <option value="4">Great Service and Meal Quality (4)</option>
+                <option value="3">Average Service and Meal Quality (3)</option>
+                <option value="2">Below Average Service and Meal Quality (2)</option>
+                <option value="1">Extremely Poor Service and Meal Quality (1)</option>
+                <option value="0">Will Not Come Back or Recommend (0)</option>
+                </select>
+            </label>
+            
+            <p id="PriceQuestion">What did you think about our prices today?</p>
+            <label for="high"><input id="high" type="radio" name="priceRate" value="PriceOpinion">Too Expensive</label>
+            <label for="perfect"><input id="perfect" type="radio" name="priceRate" value="PriceOpinion"> Perfect</label>
+            <label for="low"><input id="low" type="radio" name="priceRate" value="PriceOpinion">Cheaper than Expected</label>
+            <br>
+            <br>
+            <p id="WaiterQuestion">Who served you today?</p>
+            <label for "Alfred"><input id="Alfred" value="Waiter" type="checkbox" name ="WaiterName">Alfred</label>
+            <label for "Ellen"><input id="Ellen" value="Waiter" type="checkbox" name="WaiterName">Ellen</label>
+            <label for "Jimmy"><input id="Jimmy" value="Waiter" type="checkbox" name="WaiterName">Jimmy</label>
+            <br>
+            <br>
+            <p id="textarea">Add Additional Comments Here: </p>
+            <textarea></textarea>
+            <br><br>
+            <button type=submit id="submit">Submit Now</button>
+            <br><br>
+        </form>
+    </main>
+</html>
